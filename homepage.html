@@ -3,218 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HNF+ Workout and Nutrition Tracker</title>
-<style>
-  
-header {
-   background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-     text-align: center;
-  }
-
-  nav {
-    /* If you have a navigation menu, you can style it here */
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 20px;
-     text-align: center;
-  }
-
-  /* Adjust body padding to give space for the header */
- 
-body {
-    font-family: Arial, sans-serif;
- background: linear-gradient(to right, #ffcc00, #ff6600);
-    margin: 0;
-    padding: 20px;
-  padding-top: 120px; /* Height of the header plus some extra space */
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap; /* Allow the content to wrap as needed */
-    gap: 100px; /* Space between the sections */
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-top: 20px; /* Space for the header */
-}
-
-.section {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 10px); /* Adjust the width for two columns, accounting for the gap */
-    margin-bottom: 20px; /* Space between sections and footer */
-}
-
-.section-header {
-    font-size: 24px;
-    color: #333;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateX(-100%) translateY(-50%) rotate(-90deg);
-    transform-origin: left top;
-    white-space: nowrap;
-    z-index: 2; /* Ensure the header is above other content */
-}
-
-
-  .info-box {
-    background: #e9e9e9;
-    padding: 10px;
-    margin-top: 30px; /* Adjusted margin to accommodate vertical header */
-  }
-
-footer {
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-background-color: #333;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed; /* Keep the footer at the bottom */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Ensure the footer spans the full width of the screen */
-}
-
-/* Add a bottom padding to the body to ensure content is not hidden by the footer */
-body {
-  padding-bottom: 70px; /* Footer height plus some extra space */
-}
-
-#nutrition {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .nutrition-tracker {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .nutrition-tracker > div {
-    flex-basis: 45%; /* Adjust the width for each tracker */
-    margin-bottom: 20px;
-  }
-
-  .nutrition-tracker h3 {
-    margin-top: 0;
-  }
-#workouts {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .workout-schedule {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .workout-item {
-    margin-bottom: 20px;
-  }
-
-  .workout-item h3 {
-    margin-top: 0;
-  }
-
-  .complete-btn {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-</style>
+<title>HNF+ Dashboard</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-
-  
-  <div class="logo">HNF+ Fitness</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Workouts</a>
-    <a href="#">Nutrition</a>
-    <a href="#">About</a>
-  </nav>
-</header>
-
 <div class="container">
-  <section id="workouts">
-    <h2>Today's Workout Plan</h2>
-    <div class="workout-schedule">
-        <div class="workout-item">
-            <h3>Cardio Warm-Up</h3>
+    <div class="workout-plan">
+        <h2>Today's Workout Plan</h2>
+        <div class="cardio">
+            <p>Cardio Warm-Up</p>
             <p>Duration: 10 minutes</p>
-            <button class="complete-btn">Mark as Complete</button>
+            <button>Mark as Complete</button>
         </div>
-        <div class="workout-item">
-            <h3>Strength Training</h3>
+        <div class="strength">
+            <p>Strength Training</p>
             <p>Exercises: Squats, Bench Press, Deadlifts</p>
             <p>Sets/Reps: 3x10</p>
-            <button class="complete-btn">Mark as Complete</button>
+            <button>Mark as Complete</button>
         </div>
-        <div class="workout-item">
-            <h3>Cool Down</h3>
+        <div class="cooldown">
+            <p>Cool Down</p>
             <p>Duration: 5 minutes</p>
-            <button class="complete-btn">Mark as Complete</button>
+            <button>Mark as Complete</button>
         </div>
     </div>
-</section>
-
-  <section id="nutrition">
-    <h2>Daily Nutritional Goals</h2>
-    <div class="nutrition-tracker">
-        <div class="calorie-intake">
-            <h3>Caloric Intake</h3>
+    <div class="nutritional-goals">
+        <h2>Daily Nutritional Goals</h2>
+        <div class="caloric-intake">
+            <p>Caloric Intake</p>
             <p>Goal: 2000 Calories</p>
             <p>Consumed: 1500 Calories</p>
             <p>Remaining: 500 Calories</p>
         </div>
-        <div class="macro-nutrients">
-            <h3>Macro Nutrients</h3>
-            <!-- Placeholder for graphical representation (e.g., pie chart) -->
-        </div>
         <div class="water-intake">
-            <h3>Water Intake</h3>
+            <p>Water Intake</p>
             <p>Goal: 8 Glasses</p>
             <p>Consumed: 5 Glasses</p>
         </div>
+        <div class="macros">
+            <p>Macro Nutrients</p>
+            <!-- Additional content here -->
+        </div>
         <div class="meal-suggestions">
-            <h3>Meal Suggestions</h3>
-            <!-- Placeholder for meal suggestions -->
+            <p>Meal Suggestions</p>
+            <!-- Additional content here -->
         </div>
     </div>
-</section>
-
-
+</div>
 <footer>
-  <p>&copy; 2023 HNF+ All rights reserved.</p>
+    <p>© 2023 HNF+ All rights reserved.</p>
 </footer>
-
 </body>
 </html>
