@@ -6,31 +6,39 @@
 <title>HNF+ Workout and Nutrition Tracker</title>
 <style>
   
-header {
-   background-color: #333;
+.top-bar {
+    background-color: #333; /* Or any color you want */
     color: #fff;
     padding: 10px 0;
     text-align: center;
   }
 
+  /* Header Styling */
+  header {
+    background-color: #ffcc00; /* Adjusted to match the color scheme in the image */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
   .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
-  }
-
-  nav {
-    /* If you have a navigation menu, you can style it here */
+    color: #fff; /* Adjusted to white for better visibility */
   }
 
   nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff; /* Adjusted to white for better visibility */
     margin-left: 20px;
   }
 
-  /* Adjust body padding to give space for the header */
- 
+  /* ... other styles ... */
+
+  /* Adjust body padding to accommodate the new header */
     
   
 body {
@@ -38,12 +46,12 @@ body {
  background: linear-gradient(to right, #ffcc00, #ff6600);
     margin: 0;
     padding: 20px;
-  padding-top: 70px; /* Height of the header plus some extra space */
+  padding-top: 120px; /* Height of the header plus some extra space */
   }
   .container {
     display: flex;
     flex-wrap: wrap; /* Allow the content to wrap as needed */
-    gap: 20px; /* Space between the sections */
+    gap: 10px; /* Space between the sections */
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 20px; /* Space for the header */
