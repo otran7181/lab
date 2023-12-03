@@ -17,34 +17,43 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
   }
   .section {
     flex: 1;
     background: #fff;
-    margin: 0 20px;
+    margin-right: 20px;
     padding: 20px;
+    padding-left: 120px; /* Increased space for the vertical header */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
   }
-  ..section-header {
-  font-size: 24px;
-  color: #333;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateX(-100%) translateY(-50%) rotate(-90deg);
-  transform-origin: left top;
-  white-space: nowrap;
-}
-
+  .section-header {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%) translateY(-50%) rotate(-90deg);
+    transform-origin: left top;
+    white-space: nowrap;
+  }
   .info-box {
     background: #e9e9e9;
     padding: 10px;
-    margin-top: 30px; /* Adjusted margin to accommodate vertical header */
+    margin-top: 30px;
   }
   .info-title {
     font-size: 18px;
     color: #000;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 20px; /* Separation from the main content */
   }
 </style>
 </head>
@@ -56,7 +65,12 @@
     <div class="section-header">Today's Workout Plan</div>
     <div class="info-box">
       <div class="info-title">Workout Details</div>
-      <!-- More details -->
+      <ul>
+        <li>Cardio: 30 minutes on the treadmill</li>
+        <li>Strength Training: Upper body - 4 sets of bench press, shoulder press</li>
+        <li>Core Workout: 3 sets of planks, 1 minute each</li>
+        <li>Cooldown: Stretching and 5 minutes of meditation</li>
+      </ul>
     </div>
   </div>
 
@@ -65,10 +79,19 @@
     <div class="section-header">Nutrition Information</div>
     <div class="info-box">
       <div class="info-title">Daily Nutritional Goals</div>
-      <!-- More details -->
+      <p>Calories: 2000 kcal</p>
+      <p>Proteins: 150 g</p>
+      <p>Fats: 70 g</p>
+      <p>Carbohydrates: 250 g</p>
+      <p>Fiber: 30 g</p>
+      <p>Water: 3 liters</p>
     </div>
   </div>
 </div>
+
+<footer>
+  <p>&copy; 2023 HNF+ All rights reserved.</p>
+</footer>
 
 </body>
 </html>
