@@ -30,7 +30,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 100px;
 }
 
 .workout-plan, .nutritional-goals {
