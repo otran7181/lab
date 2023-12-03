@@ -10,25 +10,91 @@
     <header>
         <h1>Trainer Management Dashboard</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#trainer-profile">Trainer Profile</a></li>
+            <li><a href="#workout-plan">Workout Plans</a></li>
+            <li><a href="#user-progress">User Progress</a></li>
+            <li><a href="#data-security">Data Security</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="trainer-profile">
-            <!-- Trainer Profile Form -->
+            <h2>Trainer Profile</h2>
+            <form action="process_trainer_profile.php" method="post">
+                <div>
+                    <label for="trainer-name">Name:</label>
+                    <input type="text" id="trainer-name" name="name" required>
+                </div>
+                <div>
+                    <label for="trainer-specialization">Specialization:</label>
+                    <input type="text" id="trainer-specialization" name="specialization" required>
+                </div>
+                <div>
+                    <label for="trainer-bio">Bio:</label>
+                    <textarea id="trainer-bio" name="bio"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Update Profile</button>
+                </div>
+            </form>
         </section>
+
         <section id="workout-plan">
-            <!-- Workout Plan Assignment Form -->
+            <h2>Workout Plan Design & Assignment</h2>
+            <form action="assign_workout_plan.php" method="post">
+                <div>
+                    <label for="plan-name">Plan Name:</label>
+                    <input type="text" id="plan-name" name="plan_name" required>
+                </div>
+                <div>
+                    <label for="plan-description">Plan Description:</label>
+                    <textarea id="plan-description" name="plan_description"></textarea>
+                </div>
+                <div>
+                    <label for="client-select">Assign to Client:</label>
+                    <select id="client-select" name="client_id">
+                        <!-- Options will be populated by server-side PHP -->
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Assign Plan</button>
+                </div>
+            </form>
         </section>
+
         <section id="user-progress">
-            <!-- User Progress Monitoring Area -->
+            <h2>User Progress Monitoring</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Client Name</th>
+                        <th>Progress</th>
+                        <th>Last Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows populated by server-side PHP -->
+                </tbody>
+            </table>
         </section>
+
         <section id="data-security">
-            <!-- Data Privacy and Security Information -->
+            <h2>Data Privacy & Security</h2>
+            <p>Here you can manage data privacy settings and user access controls.</p>
+            <!-- Additional content related to data security -->
         </section>
+
         <section id="workshops">
-            <!-- Workshop Attendance Section -->
+            <h2>Workshops</h2>
+            <ul>
+                <!-- List of workshops would be dynamically populated here -->
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy 2023 HNF+ All rights reserved.</p>
+        <p>&copy; HNF+  All rights reserved.</p>
     </footer>
 </body>
 </html>
