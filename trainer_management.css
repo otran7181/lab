@@ -3,9 +3,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+
     color: #333;
     line-height: 1.6;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
 }
 
 /* Header Styling */
