@@ -13,9 +13,9 @@
     <nav>
         <ul>
             <li><a href="#trainer-profile">Trainer Profile</a></li>
-            <li><a href="#workout-plan">Workout Plans</a></li>
+        
             <li><a href="#user-progress">User Progress</a></li>
-            <li><a href="#data-security">Data Security</a></li>
+            
             <li><a href="#workshops">Workshops</a></li>
         </ul>
     </nav>
@@ -41,28 +41,7 @@
             </form>
         </section>
 
-        <section id="workout-plan">
-            <h2>Workout Plan Design & Assignment</h2>
-            <form action="assign_workout_plan.php" method="post">
-                <div>
-                    <label for="plan-name">Plan Name:</label>
-                    <input type="text" id="plan-name" name="plan_name" required>
-                </div>
-                <div>
-                    <label for="plan-description">Plan Description:</label>
-                    <textarea id="plan-description" name="plan_description"></textarea>
-                </div>
-                <div>
-                    <label for="client-select">Assign to Client:</label>
-                    <select id="client-select" name="client_id">
-                        <!-- Options will be populated by server-side PHP -->
-                    </select>
-                </div>
-                <div>
-                    <button type="submit">Assign Plan</button>
-                </div>
-            </form>
-        </section>
+        
 
         <section id="user-progress">
             <h2>User Progress Monitoring</h2>
@@ -80,18 +59,70 @@
             </table>
         </section>
 
-        <section id="data-security">
-            <h2>Data Privacy & Security</h2>
-            <p>Here you can manage data privacy settings and user access controls.</p>
-            <!-- Additional content related to data security -->
-        </section>
+        
 
         <section id="workshops">
-            <h2>Workshops</h2>
-            <ul>
-                <!-- List of workshops would be dynamically populated here -->
-            </ul>
-        </section>
+    <h2>Workshops</h2>
+    <p>Upcoming workshops for continuous professional development. Register to enhance your skills.</p>
+    
+    <article id="workshop-list">
+        <h3>Available Workshops</h3>
+        <ul>
+            <!-- This list would be dynamically populated with data from the server -->
+            <li>
+                <h4>Advanced Nutrition Strategies</h4>
+                <p>Date: 2023-07-10</p>
+                <p>Location: Online</p>
+                <button onclick="register(1)">Register</button>
+            </li>
+            <li>
+                <h4>Cutting-edge Fitness Tech</h4>
+                <p>Date: 2023-08-05</p>
+                <p>Location: Main Gym Hall</p>
+                <button onclick="register(2)">Register</button>
+            </li>
+            <!-- More workshops -->
+        </ul>
+    </article>
+    
+    <aside id="workshop-registration">
+        <h3>Register for a Workshop</h3>
+        <form action="register_workshop.php" method="post">
+            <div>
+                <label for="workshop">Choose a Workshop:</label>
+                <select id="workshop" name="workshop_id">
+                    <!-- Options would be populated by server-side PHP -->
+                </select>
+            </div>
+            <div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </aside>
+
+    <!-- If trainers can create workshops -->
+    <aside id="workshop-creation">
+        <h3>Create a New Workshop</h3>
+        <form action="create_workshop.php" method="post">
+            <div>
+                <label for="workshop-title">Workshop Title:</label>
+                <input type="text" id="workshop-title" name="title" required>
+            </div>
+            <div>
+                <label for="workshop-date">Date:</label>
+                <input type="date" id="workshop-date" name="date" required>
+            </div>
+            <div>
+                <label for="workshop-location">Location:</label>
+                <input type="text" id="workshop-location" name="location" required>
+            </div>
+            <div>
+                <button type="submit">Create Workshop</button>
+            </div>
+        </form>
+    </aside>
+</section>
+
     </main>
     <footer>
         <p>&copy; HNF+  All rights reserved.</p>
