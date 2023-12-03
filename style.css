@@ -30,13 +30,13 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 50px;
 }
 
 .workout-plan, .nutritional-goals {
     width: 48%;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 50px;
     border-radius: 5px;
 }
 
