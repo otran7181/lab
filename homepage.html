@@ -1,80 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HNF+ Workout and Nutrition Tracker</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HNF+ Workout and Nutrition Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .section-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .workout, .nutrition {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-box {
+    background: #e9e9e9;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .info-title {
+    font-size: 18px;
+    color: #000;
+  }
+  /* Add more styles as needed */
+</style>
 </head>
 <body>
-    <header>
-        <h1>HNF+ Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="#workouts">Workouts</a></li>
-                <li><a href="#nutrition">Nutrition</a></li>
-                <li><a href="#profile">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="workouts">
-    <h2>Today's Workout Plan</h2>
-    <div class="workout-schedule">
-        <div class="workout-item">
-            <h3>Cardio Warm-Up</h3>
-            <p>Duration: 10 minutes</p>
-            <button class="complete-btn">Mark as Complete</button>
-        </div>
-        <div class="workout-item">
-            <h3>Strength Training</h3>
-            <p>Exercises: Squats, Bench Press, Deadlifts</p>
-            <p>Sets/Reps: 3x10</p>
-            <button class="complete-btn">Mark as Complete</button>
-        </div>
-        <div class="workout-item">
-            <h3>Cool Down</h3>
-            <p>Duration: 5 minutes</p>
-            <button class="complete-btn">Mark as Complete</button>
-        </div>
+
+<div class="container">
+  <!-- Workout Section -->
+  <div id="workout-section" class="section workout">
+    <div class="section-header">Today's Workout Plan</div>
+    <!-- Add workout details here -->
+    <div class="info-box">
+      <div class="info-title">Workout Details</div>
+      <!-- More details -->
     </div>
-</section>
-<section id="nutrition">
-    <h2>Daily Nutritional Goals</h2>
-    <div class="nutrition-tracker">
-        <div class="calorie-intake">
-            <h3>Caloric Intake</h3>
-            <p>Goal: 2000 Calories</p>
-            <p>Consumed: 1500 Calories</p>
-            <p>Remaining: 500 Calories</p>
-        </div>
-        <div class="macro-nutrients">
-            <h3>Macro Nutrients</h3>
-            <!-- Placeholder for graphical representation (e.g., pie chart) -->
-        </div>
-        <div class="water-intake">
-            <h3>Water Intake</h3>
-            <p>Goal: 8 Glasses</p>
-            <p>Consumed: 5 Glasses</p>
-        </div>
-        <div class="meal-suggestions">
-            <h3>Meal Suggestions</h3>
-            <!-- Placeholder for meal suggestions -->
-        </div>
+  </div>
+
+  <!-- Nutrition Section -->
+  <div id="nutrition-section" class="section nutrition">
+    <div class="section-header">Nutrition Information</div>
+    <!-- Add nutrition details here -->
+    <div class="info-box">
+      <div class="info-title">Daily Nutritional Goals</div>
+      <!-- More details -->
     </div>
-</section>
+  </div>
+</div>
 
-
-        <aside>
-            <div class="motivational-quotes">
-                <p>Daily Motivation: "Your only limit is you."</p>
-            </div>
-        </aside>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 HNF+. All rights reserved.</p>
-    </footer>
 </body>
 </html>
-
-
