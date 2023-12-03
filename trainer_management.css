@@ -1,28 +1,23 @@
-/* General Body Styling */
+/* General body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header styles */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 0;
+    background-color: #333;
+    color: white;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
+    padding: 1em 0;
 }
 
 nav ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 nav ul li {
@@ -31,113 +26,79 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
-/* Main Content Styling */
+/* Main content styles */
 main {
     padding: 20px;
 }
 
-/* Search Bar Styling */
+/* Search bar styles */
 #trainer-search {
     margin-bottom: 20px;
-    text-align: center;
 }
 
-#trainer-search input[type="text"] {
+#trainer-search input[type=text] {
+    width: 70%;
     padding: 10px;
-    width: 300px;
     margin-right: 10px;
+    border: 1px solid #ddd;
 }
 
 #trainer-search button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    border: none;
+    padding: 10px 20px;
+    background-color: #5cb85c;
     color: white;
+    border: none;
     cursor: pointer;
 }
 
 #trainer-search button:hover {
+    background-color: #4cae4c;
+}
+
+/* Trainer card styles */
+.trainer-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Workshop styles */
+#workshops .workshop {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#workshops .workshop-info h4 {
+    margin-top: 0;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
     background-color: #0056b3;
 }
 
-/* Trainer Cards Styling */
-#trainer-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-}
-
-.trainer-card {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.trainer-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.trainer-card button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.trainer-card button:hover {
-    background-color: #218838;
-}
-
-/* Featured Trainers Styling */
-#featured-trainers {
-    margin-top: 40px;
-}
-
-.featured-trainer {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.featured-trainer img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-/* Footer Styling */
+/* Footer styles */
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    background-color: #007bff;
-    color: #fff;
+    padding: 1em 0;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    #trainer-search input[type="text"] {
-        width: 80%;
-    }
 }
