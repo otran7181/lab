@@ -130,3 +130,60 @@ footer {
     color: white;
     text-align: center;
     padding: 
+#workshop-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#workshop-list li {
+    background-color: #e9ecef;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#workshop-list h4 {
+    margin-top: 0;
+}
+
+#workshop-registration,
+#workshop-creation {
+    margin-top: 2rem;
+}
+
+aside {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+form label {
+    margin-bottom: .5rem;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: #28a745;
+    color
