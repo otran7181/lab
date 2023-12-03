@@ -42,29 +42,33 @@ body {
   }
   .container {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1200px;
+    flex-wrap: wrap; /* Allow the content to wrap as needed */
+    gap: 20px; /* Space between the sections */
     margin: 0 auto;
-  }
-  .section {
-    flex: 1;
+    max-width: 1200px;
+    padding-top: 20px; /* Space for the header */
+}
+
+.section {
     background: #fff;
-    margin: 0 20px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  ..section-header {
-  font-size: 24px;
-  color: #333;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateX(-100%) translateY(-50%) rotate(-90deg);
-  transform-origin: left top;
-  white-space: nowrap;
+    width: calc(50% - 10px); /* Adjust the width for two columns, accounting for the gap */
+    margin-bottom: 20px; /* Space between sections and footer */
 }
+
+.section-header {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%) translateY(-50%) rotate(-90deg);
+    transform-origin: left top;
+    white-space: nowrap;
+    z-index: 2; /* Ensure the header is above other content */
+}
+
 
   .info-box {
     background: #e9e9e9;
