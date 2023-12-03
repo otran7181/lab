@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNF+ Trainer Management</title>
-    <link rel="stylesheet" href="trainer_management.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <!-- Header Section -->
@@ -22,28 +22,40 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- Trainer List Section -->
-        <section id="trainer-list">
-            <h2>Available Trainers</h2>
-            <ul>
-                <!-- List of trainers will be populated here -->
-                <li>Trainer 1 - <a href="#trainer1-details">View Details</a></li>
-                <li>Trainer 2 - <a href="#trainer2-details">View Details</a></li>
-                <!-- Add more trainers as needed -->
-            </ul>
+        <!-- Search Bar -->
+        <section id="trainer-search">
+            <input type="text" placeholder="Search for trainers...">
+            <button>Search</button>
         </section>
 
-        <!-- Trainer Detail View Section -->
-        <section id="trainer-details">
-            <article id="trainer1-details">
-                <h3>Trainer 1 Details</h3>
-                <p>Information about Trainer 1...</p>
-            </article>
-            <article id="trainer2-details">
-                <h3>Trainer 2 Details</h3>
-                <p>Information about Trainer 2...</p>
-            </article>
-            <!-- Add more trainer details as needed -->
+        <!-- Trainer Card Display Section -->
+        <section id="trainer-cards">
+            <div class="trainer-card">
+                <img src="trainer1.jpg" alt="Trainer 1">
+                <h3>Trainer 1</h3>
+                <p>Specialization: Yoga</p>
+                <button>View Profile</button>
+            </div>
+            <div class="trainer-card">
+                <img src="trainer2.jpg" alt="Trainer 2">
+                <h3>Trainer 2</h3>
+                <p>Specialization: Weight Training</p>
+                <button>View Profile</button>
+            </div>
+            <!-- Add more trainer cards as needed -->
+        </section>
+
+        <!-- Featured Trainers Section -->
+        <section id="featured-trainers">
+            <h2>Featured Trainers</h2>
+            <div class="featured-trainer">
+                <img src="featured1.jpg" alt="Featured Trainer 1">
+                <div>
+                    <h4>Featured Trainer 1</h4>
+                    <p>Description and achievements of the featured trainer.</p>
+                </div>
+            </div>
+            <!-- Add more featured trainers as needed -->
         </section>
     </main>
 
