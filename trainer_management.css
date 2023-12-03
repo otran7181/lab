@@ -147,13 +147,24 @@ footer {
     margin-top: 40px;
 }
 
+.workshops-container {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling for multiple workshops */
+    padding-bottom: 20px; /* Optional: to give space below the workshops */
+}
+
 .workshop {
     background-color: #fff;
+    flex: 0 0 auto; /* Allows each workshop to maintain its size */
+    margin-right: 20px; /* Space between workshops */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.workshop:last-child {
+    margin-right: 0; /* Removes margin for the last workshop */
 }
 
 .workshop img {
@@ -177,4 +188,20 @@ footer {
 
 .workshop-info button:hover {
     background-color: #138496;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workshops-container {
+        flex-direction: column;
+    }
+
+    .workshop {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .workshop:last-child {
+        margin-bottom: 0;
+    }
 }
