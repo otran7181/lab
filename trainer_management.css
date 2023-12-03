@@ -14,20 +14,28 @@ header {
     padding: 1em 0;
 }
 
+/* Navigation menu styles */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #333;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 /* Main content styles */
@@ -41,18 +49,21 @@ main {
 }
 
 #trainer-search input[type=text] {
-    width: 70%;
+    width: calc(100% - 22px);
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
 #trainer-search button {
+    width: 100%;
     padding: 10px 20px;
     background-color: #5cb85c;
     color: white;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #trainer-search button:hover {
@@ -86,6 +97,8 @@ button {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover {
