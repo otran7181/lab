@@ -1,189 +1,69 @@
-/* Reset some default styles */
-* {
+/* Base styling for the body to set up flex display */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, main, footer {
+    width: 80%;
+    max-width: 1200px; /* Adjust as per your design needs */
+}
+
+/* Styling for the main content area */
+main {
+    display: flex;
+    flex-direction: column; /* Keeps sections vertical */
+    align-items: center; /* Aligns sections in the middle */
+    gap: 20px; /* Space between sections */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+}
+
+/* Additional styling for sections */
+#trainer-profile, #workshops {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    margin-bottom: 20px;
+}
+
+/* Styling for forms and their elements */
+form div {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #007bff;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-form div,
-table th,
-table td {
-    padding: 0.5rem;
-}
-
-form div {
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.3rem;
-}
-
-input[type="text"],
-textarea,
-select {
+button[type="submit"] {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-}
-
-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 0.5rem 2rem;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table thead {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-table th,
-table td {
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 0.5rem;
-}
-
-table tbody tr:nth-child(odd) {
-    background-color: #f4f4f4;
-}
-
-footer {
-    background-color: #333;
+    background-color: #4CAF50; /* Example color */
     color: white;
-    text-align: center;
-    padding: 
-#workshop-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#workshop-list li {
-    background-color: #e9ecef;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-#workshop-list h4 {
-    margin-top: 0;
-}
-
-#workshop-registration,
-#workshop-creation {
-    margin-top: 2rem;
-}
-
-aside {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-aside h3 {
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form div {
-    margin-bottom: 1rem;
-}
-
-form label {
-    margin-bottom: .5rem;
-}
-
-form input[type="text"],
-form input[type="date"],
-form select {
-    padding: .5rem;
-    border: 1px solid #ccc;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-form button {
-    cursor: pointer;
-    background-color: #28a745;
-    color
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Further styling can be added as per your design requirements */
