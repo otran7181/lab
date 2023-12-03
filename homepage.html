@@ -19,42 +19,39 @@
     margin: 0 auto;
     position: relative;
   }
-  .section {
-    flex: 1;
-    background: #fff;
-    margin-right: 20px;
-    padding: 20px;
-    padding-left: 120px; /* Increased space for the vertical header */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  .section-header {
-    font-size: 24px;
-    color: #333;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateX(-100%) translateY(-50%) rotate(-90deg);
-    transform-origin: left top;
-    white-space: nowrap;
-  }
-  .info-box {
-    background: #e9e9e9;
-    padding: 10px;
-    margin-top: 30px;
-  }
-  .info-title {
-    font-size: 18px;
-    color: #000;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    margin-top: 20px; /* Separation from the main content */
-  }
+  /* ... existing styles ... */
+
+.section {
+  /* ... existing styles ... */
+  padding-left: 140px; /* Increase left padding to prevent overlap with vertical text */
+}
+
+.section-header {
+  /* ... existing styles ... */
+  top: 50%;
+  left: 20px; /* Adjust left position to fit within the container */
+  transform: translateX(-100%) translateY(-50%) rotate(-90deg);
+  z-index: 10; /* Ensure the headers are above other content */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Keep the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensure the footer spans the full width of the screen */
+}
+
+/* Add a bottom padding to the body to ensure content is not hidden by the footer */
+body {
+  padding-bottom: 70px; /* Footer height plus some extra space */
+}
+
+/* ... existing styles ... */
+
 </style>
 </head>
 <body>
