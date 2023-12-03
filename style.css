@@ -69,19 +69,13 @@ button:hover {
     background-color: #e68a00;
 }
 
-footer {
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-background-color: #333;
- 
-  position: fixed; /* Keep the footer at the bottom */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Ensure the footer spans the full width of the screen */
-}
 
-/* Add a bottom padding to the body to ensure content is not hidden by the footer */
-body {
-  padding-bottom: 70px; /* Footer height plus some extra space */
-}
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
