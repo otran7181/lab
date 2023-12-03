@@ -7,7 +7,7 @@
 <style>
   
 header {
-   background-color: #008080;
+   background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -74,6 +74,7 @@ body {
 
 footer {
   text-align: center;
+  color: #fff;
   padding: 20px;
 background-color: #333;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -88,7 +89,27 @@ body {
   padding-bottom: 70px; /* Footer height plus some extra space */
 }
 
-/* ... existing styles ... */
+#nutrition {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nutrition-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nutrition-tracker > div {
+    flex-basis: 45%; /* Adjust the width for each tracker */
+    margin-bottom: 20px;
+  }
+
+  .nutrition-tracker h3 {
+    margin-top: 0;
+  }
 
 </style>
 </head>
@@ -118,20 +139,31 @@ body {
     </div>
   </div>
 
-  <!-- Nutrition Section -->
-  <div id="nutrition-section" class="section">
-    <div class="section-header">Nutrition Information</div>
-    <div class="info-box">
-      <div class="info-title">Daily Nutritional Goals</div>
-      <p>Calories: 2000 kcal</p>
-      <p>Proteins: 150 g</p>
-      <p>Fats: 70 g</p>
-      <p>Carbohydrates: 250 g</p>
-      <p>Fiber: 30 g</p>
-      <p>Water: 3 liters</p>
+  <section id="nutrition">
+    <h2>Daily Nutritional Goals</h2>
+    <div class="nutrition-tracker">
+        <div class="calorie-intake">
+            <h3>Caloric Intake</h3>
+            <p>Goal: 2000 Calories</p>
+            <p>Consumed: 1500 Calories</p>
+            <p>Remaining: 500 Calories</p>
+        </div>
+        <div class="macro-nutrients">
+            <h3>Macro Nutrients</h3>
+            <!-- Placeholder for graphical representation (e.g., pie chart) -->
+        </div>
+        <div class="water-intake">
+            <h3>Water Intake</h3>
+            <p>Goal: 8 Glasses</p>
+            <p>Consumed: 5 Glasses</p>
+        </div>
+        <div class="meal-suggestions">
+            <h3>Meal Suggestions</h3>
+            <!-- Placeholder for meal suggestions -->
+        </div>
     </div>
-  </div>
-</div>
+</section>
+
 
 <footer>
   <p>&copy; 2023 HNF+ All rights reserved.</p>
