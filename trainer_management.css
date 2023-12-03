@@ -1,90 +1,101 @@
-/* Base styling for the body to set up flex display */
+/* General Body Styling */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header, nav, main, footer {
-    width: 80%;
-    max-width: 1200px; /* Adjust as per your design needs */
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Styling for the main content area */
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styling */
 main {
-    display: flex;
-    flex-direction: column; /* Keeps sections vertical */
-    align-items: center; /* Aligns sections in the middle */
-    gap: 20px; /* Space between sections */
+    padding: 20px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    main {
-        width: 95%;
-    }
-}
-
-/* Additional styling for sections */
-#trainer-profile, #workshops {
-    width: 100%;
+/* Trainer List Styling */
+#trainer-list {
+    background-color: #fff;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for forms and their elements */
-form div {
-    margin-bottom: 10px;
+#trainer-list h2 {
+    margin-top: 0;
 }
 
-input[type="text"], input[type="date"], textarea, select {
+#trainer-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#trainer-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#trainer-list ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#trainer-list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Trainer Details Styling */
+#trainer-details {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#trainer-details h3 {
+    margin-top: 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
-button[type="submit"] {
-    width: 100%;
-    background-color: #4CAF50; /* Example color */
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Further styling can be added as per your design requirements */
-.container {
-    display: flex; /* Use flexbox to create a flexible layout */
-    justify-content: space-between; /* Space out the children */
-    align-items: flex-start; /* Align items to the start of the flex container */
-}
-
-#trainer-profile, #workshops {
-    width: 48%; /* Assign width to each section, should total less than 100% */
-    /* Rest of your styles */
-}
-
-/* Optional: Responsive design to stack them on smaller screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack the children vertically on small screens */
-    }
-
-    #trainer-profile, #workshops {
-        width: 100%; /* Full width on small screens */
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
     }
 }
