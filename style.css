@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.workout-plan, .nutritional-goals {
+    width: 48%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+background-color: #333;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Keep the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensure the footer spans the full width of the screen */
+}
+
+/* Add a bottom padding to the body to ensure content is not hidden by the footer */
+body {
+  padding-bottom: 70px; /* Footer height plus some extra space */
+}
