@@ -67,3 +67,24 @@ button[type="submit"]:hover {
 }
 
 /* Further styling can be added as per your design requirements */
+.container {
+    display: flex; /* Use flexbox to create a flexible layout */
+    justify-content: space-between; /* Space out the children */
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+#trainer-profile, #workshops {
+    width: 48%; /* Assign width to each section, should total less than 100% */
+    /* Rest of your styles */
+}
+
+/* Optional: Responsive design to stack them on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the children vertically on small screens */
+    }
+
+    #trainer-profile, #workshops {
+        width: 100%; /* Full width on small screens */
+    }
+}
