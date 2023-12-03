@@ -3,116 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainer Management System</title>
-    <link rel="stylesheet" href="trainer_management.css">
+    <title>HNF+ Trainer Management</title>
+    <link rel="stylesheet" href="trainer_management.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <!-- Header Section -->
     <header>
+        <h1>HNF+ Trainer Management</h1>
         <nav>
             <ul>
-                <li><a href="homepages.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="IS436Login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-<nav class="navbar second navbar-expand-lg bg-light">
-        <h1>Trainer Management Dashboard</h1>
-   
     </header>
-    
+
+    <!-- Main Content Section -->
     <main>
-        <div class="container">
-        <section id="trainer-profile">
-            <h2>Trainer Profile</h2>
-            <form action="process_trainer_profile.php" method="post">
-                <div>
-                    <label for="trainer-name">Name:</label>
-                    <input type="text" id="trainer-name" name="name" required>
-                </div>
-                <div>
-                    <label for="trainer-specialization">Specialization:</label>
-                    <input type="text" id="trainer-specialization" name="specialization" required>
-                </div>
-                <div>
-                    <label for="trainer-bio">Bio:</label>
-                    <textarea id="trainer-bio" name="bio"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Update Profile</button>
-                </div>
-            </form>
+        <!-- Trainer List Section -->
+        <section id="trainer-list">
+            <h2>Available Trainers</h2>
+            <ul>
+                <!-- List of trainers will be populated here -->
+                <li>Trainer 1 - <a href="#trainer1-details">View Details</a></li>
+                <li>Trainer 2 - <a href="#trainer2-details">View Details</a></li>
+                <!-- Add more trainers as needed -->
+            </ul>
         </section>
 
-        
-
-        
-
-        <section id="workshops">
-    <h2>Workshops</h2>
-    <p>Upcoming workshops for continuous professional development. Register to enhance your skills.</p>
-    
-    <article id="workshop-list">
-        <h3>Available Workshops</h3>
-        <ul>
-            <!-- This list would be dynamically populated with data from the server -->
-            <li>
-                <h4>Advanced Nutrition Strategies</h4>
-                <p>Date: 12-10-2023</p>
-                <p>Location: Online</p>
-                <button onclick="register(1)">Register</button>
-            </li>
-            <li>
-                <h4>Cutting-edge Fitness Tech</h4>
-                <p>Date: 12-19-2023</p>
-                <p>Location: Main Gym Hall</p>
-                <button onclick="register(2)">Register</button>
-            </li>
-            <!-- More workshops -->
-        </ul>
-    </article>
-    
-    <aside id="workshop-registration">
-        <h3>Register for a Workshop</h3>
-        <form action="register_workshop.php" method="post">
-            <div>
-                <label for="workshop">Choose a Workshop:</label>
-                <select id="workshop" name="workshop_id">
-                    <!-- Options would be populated by server-side PHP -->
-                </select>
-            </div>
-            <div>
-                <button type="submit">Register</button>
-            </div>
-        </form>
-    </aside>
-
-    <!-- If trainers can create workshops -->
-    <aside id="workshop-creation">
-        <h3>Create a New Workshop</h3>
-        <form action="create_workshop.php" method="post">
-            <div>
-                <label for="workshop-title">Workshop Title:</label>
-                <input type="text" id="workshop-title" name="title" required>
-            </div>
-            <div>
-                <label for="workshop-date">Date:</label>
-                <input type="date" id="workshop-date" name="date" required>
-            </div>
-            <div>
-                <label for="workshop-location">Location:</label>
-                <input type="text" id="workshop-location" name="location" required>
-            </div>
-            <div>
-                <button type="submit">Create Workshop</button>
-            </div>
-        </form>
-    </aside>
-</section>
-</div>
+        <!-- Trainer Detail View Section -->
+        <section id="trainer-details">
+            <article id="trainer1-details">
+                <h3>Trainer 1 Details</h3>
+                <p>Information about Trainer 1...</p>
+            </article>
+            <article id="trainer2-details">
+                <h3>Trainer 2 Details</h3>
+                <p>Information about Trainer 2...</p>
+            </article>
+            <!-- Add more trainer details as needed -->
+        </section>
     </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; HNF+  All rights reserved.</p>
+        <p>&copy; 2023 HNF+ Trainer Management</p>
     </footer>
 </body>
 </html>
