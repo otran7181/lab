@@ -76,7 +76,7 @@ main {
 
 .trainer-card {
        color: black ;
-    background-color: #b0c4de;
+    background-color:#b0c4de;
     padding: 20px;
     text-align: center;
    border: 5px solid black;
@@ -86,10 +86,10 @@ main {
 
 
 .trainer-card button {
-    background-color:#b0c4de;
+    background-color:#ababab;
     color: black;
     padding: 10px 20px;
-    border: none;
+    border: balck;
     cursor: pointer;
     margin-top: 10px;
 }
