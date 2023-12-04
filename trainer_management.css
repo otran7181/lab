@@ -131,15 +131,16 @@ footer {
 
 .workshops-container {
     display: flex;
+    box-sizing: border-box;
     overflow-x: auto; /* Allows horizontal scrolling for multiple workshops */
-    padding-bottom: 20px; /* Optional: to give space below the workshops */
+    padding-bottom: 50px; /* Optional: to give space below the workshops */
 }
 
 .workshop {
     background-color: #fff;
       color: black ;
     flex: 0 0 auto; /* Allows each workshop to maintain its size */
-    margin-right: 40px; /* Space between workshops */
+    margin-right: 50px; /* Space between workshops */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
