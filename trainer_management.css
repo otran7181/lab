@@ -12,6 +12,10 @@ header {
     padding: 15px 0;
     text-align: center;
 }
+.gradient-background {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    /* Other styles like padding, margin, etc. */
+}
 
 header h1 {
     margin: 0;
