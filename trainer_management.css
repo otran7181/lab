@@ -76,11 +76,11 @@ main {
 
 .trainer-card {
        color: black ;
-    background-color: #fff;
+    background-color: #e2e2e2;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border: black;
+   border: 5px solid black;
+    box-sizing: border-box;
 }
 
 
@@ -134,14 +134,14 @@ footer {
     display: flex;
     box-sizing: border-box;
     overflow-x: auto; /* Allows horizontal scrolling for multiple workshops */
-    padding-bottom: 50px; /* Optional: to give space below the workshops */
+    padding-bottom: 40px; /* Optional: to give space below the workshops */
 }
 
 .workshop {
-    background-color: #fff;
+    background-color: #e2e2e2;
       color: black ;
     flex: 0 0 auto; /* Allows each workshop to maintain its size */
-    margin-right: 50px; /* Space between workshops */
+    margin-right: 20px; /* Space between workshops */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
