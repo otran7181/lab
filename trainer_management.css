@@ -171,6 +171,9 @@ footer {
 .workshop-info button:hover {
     background-color: #e7e7e7;
 }
+.workshop-description {
+    text-align: left;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
