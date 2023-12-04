@@ -54,14 +54,14 @@ main {
 
 #trainer-search button {
     padding: 10px 15px;
-    background-color: #e7e7e7;
+    background-color: #b0c4de;
     border: none;
     color: black;
     cursor: pointer;
 }
 
 #trainer-search button:hover {
-    background-color: #e7e7e7;
+    background-color: #b0c4de;
 }
 
 /* Trainer Cards Styling */
@@ -76,7 +76,7 @@ main {
 
 .trainer-card {
        color: black ;
-    background-color: #e2e2e2;
+    background-color: #b0c4de;
     padding: 20px;
     text-align: center;
    border: 5px solid black;
@@ -86,7 +86,7 @@ main {
 
 
 .trainer-card button {
-    background-color: #e7e7e7;
+    background-color:#b0c4de;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -95,7 +95,7 @@ main {
 }
 
 .trainer-card button:hover {
-    background-color: #e7e7e7;
+    background-color: #b0c4de;
 }
 
 
@@ -146,6 +146,7 @@ footer {
     display: flex;
     align-items: left;
     padding: 20px;
+    text-align: center;
 }
 
 .workshop:last-child {
