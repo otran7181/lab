@@ -54,12 +54,12 @@ main {
     padding: 10px 15px;
     background-color: #007bff;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
 #trainer-search button:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
 }
 
 /* Trainer Cards Styling */
@@ -70,6 +70,7 @@ main {
 }
 
 .trainer-card {
+       color: black ;
     background-color: #fff;
     padding: 20px;
     text-align: center;
@@ -79,8 +80,8 @@ main {
 
 
 .trainer-card button {
-    background-color: #28a745;
-    color: white;
+    background-color: #007bff;
+    color: black;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -88,7 +89,7 @@ main {
 }
 
 .trainer-card button:hover {
-    background-color: #218838;
+    background-color: #007bff;
 }
 
 
@@ -151,8 +152,8 @@ footer {
 }
 
 .workshop-info button {
-    background-color: #17a2b8;
-    color: white;
+    background-color: #007bff;
+    color:black;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -160,7 +161,7 @@ footer {
 }
 
 .workshop-info button:hover {
-    background-color: #138496;
+    background-color: #007bff;
 }
 
 /* Responsive Design */
