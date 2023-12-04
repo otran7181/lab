@@ -174,7 +174,7 @@ footer {
 .workshop-description {
     text-align: left;
 }
-.h2{ text-align: left;}
+body h2{ text-align: left;}
 /* Responsive Design */
 @media (max-width: 768px) {
     .workshops-container
