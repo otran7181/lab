@@ -54,8 +54,8 @@ main {
 
 #trainer-search button {
     padding: 10px 15px;
-    background-color: #b0c4de;
-    border: none;
+    background-color: #ababab;
+    border: black ;
     color: black;
     cursor: pointer;
 }
